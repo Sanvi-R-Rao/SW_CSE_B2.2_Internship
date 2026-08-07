@@ -3,18 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Selectors|Grouping Selector</title>
+    <title>CSS Selectors|Grouping Selector, Descendant Selectors & Child Selector</title>
     <style>
         h1,h2,h3{
-            color: crimson;
+            color: rgb(78, 13, 153);
             font-family: 'Courier New', Courier, monospace;
+        }
+        div p{
+            color: rgb(184, 52, 47);
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        ul > li{
+            list-style-type: square;
+            color:rgb(232, 114, 114) ;
         }
     </style>
 </head>
 <body>
+    <!-- Grouping Selector -->
     <h1>Frontend Development</h1>
     <h2>CSS</h2>
     <h3>Selectors</h3>
     <h4>Grouping Selectors</h4>
+    <!-- Descendant Selector -->
+    <div>
+        <p>This paragraph here is to depict the use of Descendant selector</p>
+    </div>
+    <p>This is a normal paragraph</p>
+
+    <!-- Child Selector -->
+     <p>Child Selector</p>
+     <p>Selectors</p>
+     <ul>
+        <li>Element selector</li>
+        <li>Grouping selectors</li>
+        <li>Child selector</li>
+        <li>many more...</li>
+     </ul>
 </body>
 </html>
