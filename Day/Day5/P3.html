@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Colors</title>
+    <style>
+        .named{
+            color: purple;
+        }
+        .Hex{
+            color:#3f00ff;  /* 00-ff */
+        }
+        .rgb{
+            color: rgba(52, 52, 243, 0.5);  /* 0-255 (a-->transperancy-0-1) */
+        }
+        .hsl{
+            /* hsla: Hue(0-360|0=red,120=green,240=blue), 
+            Saturation(0-100%) vivid, Lightness (0-100%) light/dark, Transperancy(0-1) */
+            color: hsl(120, 65%, 41%);
+        }
+        /* Gradient color */
+        .linear{
+            /* linear gradient */
+            background-image: linear-gradient(yellow,green);
+        }
+        .radial{
+            /* radial gradient */
+            background-image: radial-gradient(yellow,green);
+        }
+        .conic{
+            /* conic gradient */
+            background-image: conic-gradient(yellow,green);
+        }
+    </style>
+</head>
+<body>
+    <p>CSS Colors</p>
+    <ol>
+        <li class="named">Named colors</li>
+        <li class="Hex">Hex colors</li>
+        <li class="rgb">RGB & RGBA</li>
+        <li class="hsl">HSL & HSLA</li>
+        <li>Gradient color
+            <ul>
+            <li class="linear">linear</li>
+            <br>
+            <li class="radial">radial</li>
+            <br>
+            <li class="conic">conic</li>
+            </ul>
+        </li>
+    </ol>
+</body>
+</html>
