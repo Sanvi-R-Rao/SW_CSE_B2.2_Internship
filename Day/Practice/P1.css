@@ -1,0 +1,132 @@
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+
+
+.menu-container {
+  width:50%;
+  background: linear-gradient(black 50%,grey);
+}
+
+.menu-header {
+  text-align: center;
+}
+
+.menu-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 35px;
+
+}
+
+.menu-row.reverse {
+  flex-direction: row-reverse;
+}
+
+.menu-content {
+  width: 50%;
+}
+
+.category-title {
+  background-color: #ff6a00;
+  color: #000;
+  font-weight: 800;
+  font-size: 0.95rem;
+  padding: 6px 16px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.item-list {
+  list-style: none;
+}
+
+.item-list li {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  font-weight: 300;
+  margin-bottom: 8px;
+  color: #e0e0e0;
+}
+
+.item-name {
+  white-space: nowrap;
+}
+
+.item-price {
+  font-weight: 400;
+}
+
+
+.image-wrapper {
+  width: 45%;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.image-wrapper img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #ff6a00;
+  z-index: 2;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+.right-badge {
+  justify-content: flex-start;
+}
+
+.right-badge::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: -10px;
+  bottom: -10px;
+  left: 30px;
+  background-color: #ff6a00;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+  z-index: 1;
+}
+
+.left-badge {
+  justify-content: flex-end;
+}
+
+.left-badge::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -10px;
+  bottom: -10px;
+  right: 30px;
+  background-color: #ff6a00;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+
+.menu-footer {
+  display: flex;
+  gap: 15px;
+  padding: 0 30px;
+  margin-top: 20px;
+}
+
+.footer-btn {
+  background-color: #ff6a00;
+  color: #000;
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 8px 18px;
+  border-radius: 12px;
+}
