@@ -1,0 +1,65 @@
+body {
+    background-color: #eaf7fa;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h2 {
+    color: #12343b;
+    font-size: 25px;
+}
+
+h3 {
+    color: #172a3a;
+    font-size: 35px;
+}
+
+h5 {
+    color: #168aad;
+    font-size: 20px;
+    font-style: italic;
+}
+
+body > img {
+    width: 500px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+p {
+    color: #555;
+    font-size: 16px;
+}
+
+/* Three details */
+.A {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin: 25px;
+}
+
+.A div {
+    text-align: center;
+}
+
+.A img {
+    width: 35px;
+    height: 35px;
+}
+
+.A p {
+    margin: 5px;
+    font-weight: bold;
+}
+
+/* Button */
+button {
+    background-color: #168aad;
+    color: white;
+    border: none;
+    padding: 12px 50px;
+    border-radius: 10px;
+    font-size: 16px;
+}
