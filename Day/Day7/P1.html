@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transitions</title>
+    <style>
+        button{
+            background-color: bisque;
+            color: blue;
+            padding: 10px;
+            border-radius: 17px;
+            transition: background-color 0.3s ease,transform 0.33s ease; 
+            /* linear/ease/ease-in/ease-out/ease-in-out/step-start/step-end */
+        }
+        button:hover{
+            background-color:plum ;
+        }
+    </style>
+</head>
+<body>
+    <p>CSS Transitions: allows a property to change smoothly from one value to another rather immediately</p>
+    <!-- Syntax -->
+    <p>Transition:property duration timing function</p>
+
+    <button>Click here</button>
+</body>
+</html>
