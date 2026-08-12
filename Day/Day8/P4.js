@@ -42,3 +42,52 @@ let hasID = true;
 console.log(age >= 18 && hasID); // true
 console.log(age < 18 || hasID);  // true
 console.log(!hasID);             // false
+
+// Unary operators
+console.log("Unary operators")
+let n = 5;
+console.log(+n); // 5
+console.log(-n); // -5
+// Also includes increment and decrement:
+let count = 1;
+count++;
+console.log(count);
+count--;
+console.log(count);
+
+// String operators
+console.log("String operators")
+let firstName = "Rakesh";
+let lastName = "Aradhya";
+console.log(firstName + " " + lastName); // John Doe
+console.log(`${firstName} ${lastName}`);
+// ` back tick : key below esc key
+
+// Ternary operator
+console.log("Ternary operator");
+let myage = 16;
+let result = myage >= 18 ? "Adult" : "Minor";
+console.log(result);
+
+// Nullish coalescing operator
+console.log("Nullish coalescing operator");
+let username = null;
+let displayName = username ?? "Guest";
+console.log(displayName); // Guest
+
+// Optional chaining operator
+console.log("Optional chaining operator")
+let user = {
+profile: {
+name: "Asha"
+}
+};
+console.log(user?.profile?.name); // Asha
+console.log(user?.address?.city);  // undefined
+
+// Bitwise 
+console.log("Bitwise")
+console.log(5 & 1); // 1
+console.log(5 | 1); // 5
+console.log(5 ^ 1); // 4
+console.log(~5);    // -6
