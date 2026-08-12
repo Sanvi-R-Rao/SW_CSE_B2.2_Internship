@@ -23,3 +23,22 @@ x /= 2; // x = x / 2
 console.log(x)
 x %= 2; // x = x % 2
 console.log(x)
+
+// Comparison operators
+console.log("Comparison operators")
+console.log(5 == "5");   // true
+console.log(5 === "5");  // false
+console.log(10 > 5);     // true
+console.log(10 < 5);     // false
+console.log(10 >= 10);   // true
+console.log(8 <= 7);     // false
+console.log(5 != "5");   // false
+console.log(5 !== "5");  // true
+
+// Logical operators
+console.log("Logical operators")
+let age = 20;
+let hasID = true;
+console.log(age >= 18 && hasID); // true
+console.log(age < 18 || hasID);  // true
+console.log(!hasID);             // false
