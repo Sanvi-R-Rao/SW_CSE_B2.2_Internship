@@ -47,6 +47,27 @@
             semester.style.backgroundColor = "lightgreen";
         };
 
+           const subjects = document.querySelectorAll(".subject");
+
+        const highlightBtn = document.getElementById("highlightBtn");
+
+        highlightBtn.onclick = function() {
+
+            subjects.forEach(function(subject) {
+
+                subject.style.backgroundColor = "lightblue";
+
+                subject.style.color = "darkblue";
+
+                subject.style.width = "200px";
+
+                subject.style.padding = "10px";
+
+                subject.style.border = "2px solid blue";
+
+            });
+
+        };
     </script>
 </body>
 </html>
