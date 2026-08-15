@@ -19,6 +19,34 @@
     <p class="subject">JavaScript</p>
     <p class="subject">C Programming</p>
 
+    <button id="profileBtn">View Profile</button>
+    <button id="highlightBtn">Highlight Subjects</button>
+    <button id="messageBtn">Show Message</button>
+
     <div id="message"></div>
+
+     <script>
+        // 1. View Profile
+        const title = document.getElementById("title");
+        const name = document.getElementById("name");
+        const course = document.getElementById("course");
+        const semester = document.getElementById("semester");
+
+        const profileBtn = document.getElementById("profileBtn");
+
+        profileBtn.onclick = function() {
+
+            title.textContent = "My Student Profile";
+
+            title.style.color = "blue";
+
+            name.textContent = "Name: Sanvi R Rao";
+
+            course.style.backgroundColor = "lightyellow";
+
+            semester.style.backgroundColor = "lightgreen";
+        };
+
+    </script>
 </body>
 </html>
