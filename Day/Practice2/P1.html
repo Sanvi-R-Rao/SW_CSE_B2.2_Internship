@@ -47,6 +47,8 @@
             semester.style.backgroundColor = "lightgreen";
         };
 
+        // Highlight Subjects
+
            const subjects = document.querySelectorAll(".subject");
 
         const highlightBtn = document.getElementById("highlightBtn");
@@ -68,6 +70,43 @@
             });
 
         };
+
+        // Show message
+
+         const messageBtn = document.getElementById("messageBtn");
+
+        const message = document.getElementById("message");
+
+        messageBtn.onclick = function() {
+
+            message.innerHTML = `
+                <h3>Keep Learning!</h3>
+                <p>You are doing great. Continue practicing JavaScript.</p>
+            `;
+
+            message.style.backgroundColor = "lightgreen";
+
+            message.style.padding = "15px";
+
+            message.style.border = "2px solid green";
+
+            message.style.marginTop = "20px";
+        };
+
+        //getElementsByClassName()
+          const subjectList = document.getElementsByClassName("subject");
+
+        console.log("Number of subjects:", subjectList.length);
+
+        //getElementsByTagName()
+         const paragraphs = document.getElementsByTagName("p");
+
+        console.log("Number of paragraphs:", paragraphs.length);
+
+        //querySelector()
+          const heading = document.querySelector("h1");
+
+        console.log("Heading:", heading.innerText);
     </script>
 </body>
 </html>
