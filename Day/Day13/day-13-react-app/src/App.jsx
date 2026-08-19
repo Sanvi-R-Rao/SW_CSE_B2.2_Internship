@@ -4,12 +4,14 @@ import './App.css';
 import ButtonDemo from "./components/P3";
 import Counter from "./components/StateExample1.jsx";
 import ToggleText from "./components/StateExample2.jsx";
+import NameInput from "./components/StateExample3.jsx";
 function App() {
   return (
     <>
     <Welcome name="Sanvi"/>
     <Counter/>
     <ToggleText/>
+    <NameInput/>
     <ButtonDemo />
     <ProductCard
     // name="Sony WH-CH720N Active Noise Cancellation Wireless Bluetooth Over Ear Headphones"
