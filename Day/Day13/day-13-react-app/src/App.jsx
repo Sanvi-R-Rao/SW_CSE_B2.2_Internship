@@ -1,10 +1,12 @@
 import {Welcome} from "./components/P1";
 import {ProductCard} from "./components/P2";
 import './App.css';
+import ButtonDemo from "./components/P3";
 function App() {
   return (
     <>
     <Welcome name="Sanvi"/>
+    <ButtonDemo />
     <ProductCard
     // name="Sony WH-CH720N Active Noise Cancellation Wireless Bluetooth Over Ear Headphones"
     price={15999}
