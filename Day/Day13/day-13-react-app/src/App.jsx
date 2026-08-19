@@ -6,7 +6,7 @@ function App() {
     <>
     <Welcome name="Sanvi"/>
     <ProductCard
-    name="Sony WH-CH720N Active Noise Cancellation Wireless Bluetooth Over Ear Headphones"
+    // name="Sony WH-CH720N Active Noise Cancellation Wireless Bluetooth Over Ear Headphones"
     price={15999}
     image="https://m.media-amazon.com/images/I/610DB8Cwm7L._SY450_.jpg"/>
     </>
