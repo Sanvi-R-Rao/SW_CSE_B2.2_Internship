@@ -5,6 +5,9 @@ import ActionButtonDemo from "./components/EventHandler3.jsx";
 import SimpleList from "./components/ListAndKeys1.jsx";
 import UserListHook from "./components/HookOne.jsx";
 import ThemeProviderDemo from "./components/HookTwo.jsx";
+import SimpleNameForm from "./components/Form1.jsx";
+import SignupForm from "./components/Form2.jsx";
+import ValidatedForm from "./components/Form3.jsx";
 
 function App() {
 
@@ -15,7 +18,11 @@ function App() {
     <ActionButtonDemo/>
     <SimpleList/>
     <UserListHook/> */}
-    <ThemeProviderDemo/>
+    {/* <ThemeProviderDemo/> */}
+    <SimpleNameForm/>
+    <SignupForm/> 
+    <ValidatedForm/>
+    
     </>
   )
 }
