@@ -1,21 +1,22 @@
 function SimpleList() {
   const fruits = [
     // Only unique values
-    "apple",
-    "banana",
-    "mango",
-    "orange",
-    "grape",
-    "strawberry",
-    "blueberry",
-    "pineapple",
-    "watermelon",
-    "kiwi",
-    "peach",
-    "cherry",
-    "avocado",
-    "pomegranate",
-    "lemon",
+    // uncomment following line to render the list
+    // "apple",
+    // "banana",
+    // "mango",
+    // "orange",
+    // "grape",
+    // "strawberry",
+    // "blueberry",
+    // "pineapple",
+    // "watermelon",
+    // "kiwi",
+    // "peach",
+    // "cherry",
+    // "avocado",
+    // "pomegranate",
+    // "lemon",
   ];
  const vegetablesWithId = [
     // Repeated/ duplicate names but with unique id
@@ -42,11 +43,15 @@ function SimpleList() {
   return (
     <div>
       <h5>Fruit list</h5>
-      <ul>
+      {fruits.length === 0 ? (<p>No Fruits available to display</p>
+      ):(
+        <ul>
         {fruits.map((fruit) => (
           <li key={fruit}>{fruit}</li>
         ))}
       </ul>
+      )}
+      
 
       <h5>Vegetables list</h5>
       <ul>
