@@ -4,6 +4,8 @@ import FormDemo from "./components/EventHandler2.jsx";
 import ActionButtonDemo from "./components/EventHandler3.jsx";
 import SimpleList from "./components/ListAndKeys1.jsx";
 import UserListHook from "./components/HookOne.jsx";
+import ThemeProviderDemo from "./components/HookTwo.jsx";
+
 function App() {
 
   return (
@@ -11,9 +13,9 @@ function App() {
     {/* <ClickDemo/>
     <FormDemo/>
     <ActionButtonDemo/>
-    <SimpleList/> */}
-
-    <UserListHook/>
+    <SimpleList/>
+    <UserListHook/> */}
+    <ThemeProviderDemo/>
     </>
   )
 }
