@@ -8,6 +8,7 @@ import ThemeProviderDemo from "./components/HookTwo.jsx";
 import SimpleNameForm from "./components/Form1.jsx";
 import SignupForm from "./components/Form2.jsx";
 import ValidatedForm from "./components/Form3.jsx";
+import GitHubProfile from "./components/GithubApi.jsx";
 
 function App() {
 
@@ -19,9 +20,11 @@ function App() {
     <SimpleList/>
     <UserListHook/> */}
     {/* <ThemeProviderDemo/> */}
-    <SimpleNameForm/>
+    {/* <SimpleNameForm/>
     <SignupForm/> 
-    <ValidatedForm/>
+    <ValidatedForm/> */}
+
+    <GitHubProfile username="rakeshdotkr"/>
     
     </>
   )
