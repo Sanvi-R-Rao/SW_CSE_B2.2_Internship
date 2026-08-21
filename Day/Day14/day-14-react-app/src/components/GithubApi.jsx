@@ -48,8 +48,8 @@ function GitHubProfile({ username }) {
       <img
         src={data.avatar_url}
         alt={data.login}
-        width={80}
-        style={{ borderRadius: "50%" }}
+        width={250}
+        style={{ borderRadius: "100%" }}
       />
       <h3>{data.name || data.login}</h3>
       <p>{data.bio || "No bio available"}</p>

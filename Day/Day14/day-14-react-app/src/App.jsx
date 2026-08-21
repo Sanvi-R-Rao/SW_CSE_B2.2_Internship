@@ -24,7 +24,7 @@ function App() {
     <SignupForm/> 
     <ValidatedForm/> */}
 
-    <GitHubProfile username="rakeshdotkr"/>
+    <GitHubProfile username="Sanvi-R-Rao"/>
     
     </>
   )
