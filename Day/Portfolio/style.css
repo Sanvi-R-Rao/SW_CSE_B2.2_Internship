@@ -1,0 +1,301 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7ff;
+    color: #25253d;
+    transition: 0.3s;
+}
+/* NAVIGATION */
+nav {
+    background-color: #252a5a;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+nav h2 {
+    color: #a78bfa;
+    font-size: 26px;
+}
+nav div {
+    display: flex;
+    gap: 25px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+/* NAVIGATION HOVER */
+nav a:hover {
+    color: #a78bfa;
+    transform: translateY(-2px);
+}
+nav button {
+    background-color: #7c6ee6;
+    color: white;
+    border: none;
+    padding: 9px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+/* BUTTON HOVER */
+nav button:hover {
+    background-color: #a78bfa;
+    transform: scale(1.05);
+}
+/* COMMON SECTION */
+section {
+    max-width: 900px;
+    margin: auto;
+    padding: 80px 20px;
+    text-align: center;
+}
+section h2 {
+    color: #4f46a5;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+/* HOME */
+.home {
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(
+        135deg,
+        #f5f7ff,
+        #e8e4ff
+    );
+}
+.home h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+.home h1 span {
+    color: #635bca;
+    transition: 0.3s;
+}
+/* NAME HOVER */
+.home h1 span:hover {
+    color: #a855f7;
+}
+.home h3 {
+    color: #555;
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+.home p {
+    max-width: 600px;
+    line-height: 1.8;
+    font-size: 17px;
+}
+/* HOME BUTTON */
+.home button {
+    background-color: #635bca;
+    color: white;
+    border: none;
+    padding: 13px 25px;
+    margin-top: 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+.home button:hover {
+    background-color: #4f46a5;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(79, 70, 165, 0.3);
+}
+/* ABOUT */
+#about p {
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.8;
+    font-size: 17px;
+}
+/* SKILLS */
+.skills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.skills p {
+    background-color: #e4e0ff;
+    color: #4f46a5;
+    padding: 15px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    border: 1px solid #d4cffc;
+    transition: 0.3s;
+}
+/* SKILLS HOVER */
+.skills p:hover {
+    background-color: #635bca;
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 12px rgba(79, 70, 165, 0.2);
+}
+/* PROJECT */
+.project {
+    background-color: white;
+    max-width: 600px;
+    margin: auto;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow:
+        0 5px 20px rgba(70, 60, 150, 0.12);
+    transition: 0.3s;
+}
+/* PROJECT HOVER */
+.project:hover {
+    transform: translateY(-8px);
+    box-shadow:
+        0 10px 30px rgba(70, 60, 150, 0.2);
+}
+.project h3 {
+    color: #635bca;
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+.project p {
+    line-height: 1.7;
+    margin: 10px;
+}
+/* PROJECT BUTTON */
+.project-button {
+    display: inline-block;
+    background-color: #635bca;
+    color: white;
+    text-decoration: none;
+    padding: 12px 22px;
+    margin-top: 15px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+/* PROJECT BUTTON HOVER */
+.project-button:hover {
+    background-color: #4f46a5;
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(79, 70, 165, 0.3);
+}
+/* CONTACT */
+form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+input,
+textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    transition: 0.3s;
+}
+/* INPUT HOVER */
+input:hover,
+textarea:hover {
+    border-color: #7c6ee6;
+}
+/* INPUT FOCUS */
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #635bca;
+    box-shadow: 0 0 5px rgba(99, 91, 202, 0.3);
+}
+textarea {
+    height: 120px;
+    resize: none;
+}
+form button {
+    background-color: #635bca;
+    color: white;
+    border: none;
+    padding: 13px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+form button:hover {
+    background-color: #4f46a5;
+    transform: translateY(-2px);
+}
+#formMessage {
+    margin-top: 15px;
+    font-weight: bold;
+}
+/* FOOTER */
+footer {
+    background-color: #252a5a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+/* DARK MODE */
+.dark {
+    background-color: #17172b;
+    color: white;
+}
+.dark .home {
+    background: #17172b;
+}
+.dark .home h3 {
+    color: #ccc;
+}
+.dark .project {
+    background-color: #272747;
+}
+.dark .skills p {
+    background-color: #302f59;
+    color: #c4b5fd;
+    border-color: #454275;
+}
+.dark section h2 {
+    color: #a78bfa;
+}
+/* MOBILE */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+    nav div {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    nav a {
+        font-size: 14px;
+    }
+    .home h1 {
+        font-size: 35px;
+    }
+    .home h3 {
+        font-size: 19px;
+    }
+    section {
+        padding: 60px 20px;
+    }
+}
