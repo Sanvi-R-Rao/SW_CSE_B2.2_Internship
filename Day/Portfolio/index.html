@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanvi | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- NAVIGATION -->
+    <nav>
+        <h2>Sanvi.</h2>
+        <div>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <button id="themeButton">
+            Dark Mode
+        </button>
+    </nav>
+    <!-- HOME -->
+    <section id="home" class="home">
+        <h1>
+            Hi, I'm
+            <span>Sanvi Rao</span>
+        </h1>
+        <h3>
+            Computer Science Engineering Student
+        </h3>
+        <p>
+            I am a B.Tech Computer Science Engineering
+            student interested in web development,
+            programming and learning new technologies.
+        </p>
+        <button onclick="showMessage()">
+            Say Hello
+        </button>
+        <p id="helloMessage"></p>
+    </section>
+    <!-- ABOUT -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I am a Computer Science Engineering student
+            who enjoys learning programming and creating
+            websites. I am currently learning HTML, CSS
+            and JavaScript and working on small projects
+            to improve my skills.
+        </p>
+    </section>
+    <!-- SKILLS -->
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skills">
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+            <p>C</p>
+            <p>Python</p>
+            <p>Git & GitHub</p>
+        </div>
+    </section>
+    <!-- PROJECTS -->
+    <section id="projects">
+        <h2>My Project</h2>
+        <div class="project">
+            <h3>Amazon Clone</h3>
+            <p>
+                A simple Amazon homepage clone created
+                using HTML and CSS. This project helped me
+                practice webpage structure, Flexbox,
+                navigation bars and CSS styling.
+            </p>
+            <p>
+                <b>Technologies:</b>
+                HTML, CSS
+            </p>
+            <a
+                href="https://github.com/username/amazon-clone"
+                target="_blank"
+                class="project-button"
+            >
+                View Project →
+            </a>
+        </div>
+    </section>
+    <!-- CONTACT -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <input
+                type="text"
+                id="name"
+                placeholder="Your Name"
+            >
+            <input
+                type="email"
+                id="email"
+                placeholder="Your Email"
+            >
+            <textarea
+                id="message"
+                placeholder="Your Message"
+            ></textarea>
+            <button type="submit">
+                Send Message
+            </button>
+        </form>
+        <p id="formMessage"></p>
+    </section>
+    <!-- FOOTER -->
+    <footer>
+        <p>
+            © 2026 Sanvi Rao | My Portfolio
+        </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
