@@ -14,3 +14,8 @@ function updateColor() {
 
 generateBtn.addEventListener('click', updateColor);
 
+copyBtn.addEventListener('click', async () => {
+  await navigator.clipboard.writeText(colorText.textContent);
+  copyBtn.textContent = 'Copied!';
+  setTimeout(() => (copyBtn.textContent = 'Copy Hex'), 1500);
+});
