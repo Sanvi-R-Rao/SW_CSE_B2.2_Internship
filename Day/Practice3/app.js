@@ -19,3 +19,10 @@ copyBtn.addEventListener('click', async () => {
   copyBtn.textContent = 'Copied!';
   setTimeout(() => (copyBtn.textContent = 'Copy Hex'), 1500);
 });
+
+document.addEventListener('keydown', (e) => {
+  if (e.code === 'Space' && e.target.tagName !== 'BUTTON') {
+    e.preventDefault();
+    updateColor();
+  }
+});
